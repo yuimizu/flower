@@ -1,0 +1,92 @@
+@mixin breakpoint{
+    @media screen and (max-width:1000px){
+        @content;
+    }
+}
+
+html{
+    font-size: 100%;
+}
+
+body{
+    background-color: #efeded;
+    color: #35383a;
+    font-family: 'Noto Serif JP', serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+.content{
+    max-width: 1000px;
+    height: 698px;
+    margin: 100px auto;
+    position: relative;
+
+    @include breakpoint{
+        height: auto;
+        position: static;
+        margin: 0;
+    }
+}
+
+.text{
+    max-width: 680px;
+    background-color: #fff;
+    padding: 84px 160px 84px 84px;
+    position: absolute;
+    left: 0;
+
+    @include breakpoint{
+        max-width: 100%;
+        padding: 60px 20px;
+        position: static;
+    }
+
+    .title{
+        border-bottom: solid 1px #35383a;
+        display: inline-block;
+        font-size: 1.875rem;
+        font-weight: normal;
+        margin-bottom: 30px;
+    }
+
+    .large{
+        font-size: 1.875rem;
+    }
+
+    p{
+        line-height: 1.8;
+        margin-bottom: 35px;
+    } 
+
+    .btn{
+        display: inline-block;
+        border: solid 1px #35383a;
+        border-radius: 30px;
+        padding: 16px 50px;
+
+        &:hover{
+            background-color: #efeded;
+        }
+    } 
+
+    a{
+        text-decoration: none;
+        color: #35383a;  
+    }
+}
+
+.img{
+    max-width: 400px;
+    position: absolute;
+    top: 140px;
+    right: 20px;
+
+    @include breakpoint{
+        max-width: 100%;
+        position: static;
+    }
+}
+

@@ -1,0 +1,83 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  background-color: #efeded;
+  color: #35383a;
+  font-family: "Noto Serif JP", serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.content {
+  max-width: 1000px;
+  height: 698px;
+  margin: 100px auto;
+  position: relative;
+}
+@media screen and (max-width: 1000px) {
+  .content {
+    height: auto;
+    position: static;
+    margin: 0;
+  }
+}
+
+.text {
+  max-width: 680px;
+  background-color: #fff;
+  padding: 84px 160px 84px 84px;
+  position: absolute;
+  left: 0;
+}
+@media screen and (max-width: 1000px) {
+  .text {
+    max-width: 100%;
+    padding: 60px 20px;
+    position: static;
+  }
+}
+.text .title {
+  border-bottom: solid 1px #35383a;
+  display: inline-block;
+  font-size: 1.875rem;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+.text .large {
+  font-size: 1.875rem;
+}
+.text p {
+  line-height: 1.8;
+  margin-bottom: 35px;
+}
+.text .btn {
+  display: inline-block;
+  border: solid 1px #35383a;
+  border-radius: 30px;
+  padding: 16px 50px;
+}
+.text .btn:hover {
+  background-color: #efeded;
+}
+.text a {
+  text-decoration: none;
+  color: #35383a;
+}
+
+.img {
+  max-width: 400px;
+  position: absolute;
+  top: 140px;
+  right: 20px;
+}
+@media screen and (max-width: 1000px) {
+  .img {
+    max-width: 100%;
+    position: static;
+  }
+}
+/*# sourceMappingURL=style.css.map */
